@@ -30,7 +30,7 @@ const modeContent = {
   },
   hi: {
     title: "अपना रिज्यूमे बनाने का तरीका चुनें",
-    subtitle: "आप अपना रिज्यूमे कैसे बनाना चाहत��� हैं?",
+    subtitle: "आप अपना रिज्यूमे कैसे बनाना चाहते हैं?",
     guided: {
       title: "गाइडेड मोड",
       description: "हम आपसे एक-एक करके सवाल पूछेंगे और आपका रिज्यूमे बनाने में मदद करेंगे",
@@ -45,7 +45,7 @@ const modeContent = {
   },
   bn: {
     title: "আপনার রিজিউমে তৈরির পদ্ধতি বেছে নিন",
-    subtitle: "আপনি কীভাবে আপনার রিজিউমে তৈরি করতে চান?",
+    subtitle: "আপনি কীভাবে আপনার রিজিউমে তৈরি করতে চাহতে চান?",
     guided: {
       title: "গাইডেড মোড",
       description: "আমরা আপনাকে একে একে প্রশ্ন করব এবং ধাপে ধাপে আপনার রিজিউমে তৈরি করতে সাহায্য করব",
@@ -83,7 +83,7 @@ const modeContent = {
     },
     freeform: {
       title: "இலவச வடிவ முறை",
-      description: "உங்கள் அனுபவத்தைப் பற்றி சுதந்திரமாக பேசுங்கள், நாங்கள் அதை ஒரு தொழில்முறை ரெஸ்யூமேவாக ஒழுங்கமைப்போம்",
+      description: "உங்கள் அனுபவத்தெக்குறিച்சு சுதந்திரமாக பேசுங்கள், நாங்கள் அதை ஒரு தொழில்முறை ரெஸ்யூமேவாக ஒழுங்கமைப்போம்",
       features: ["இயல்பாக பேசுங்கள்", "உங்கள் கதையைச் சொல்லுங்கள்", "மிகவும் நெகிழ்வான அணுகுமுறை"],
     },
     audioPrompt:
@@ -117,7 +117,7 @@ const modeContent = {
       description: "તમારા અનુભવ વિશે મુક્તપણે બોલો અને અમે તેને વ્યાવસાયિક રિઝ્યૂમેમાં ગોઠવીશું",
       features: ["કુદરતી રીતે બોલો", "તમારી વાર્તા કહો", "વધુ લવચીક અભિગમ"],
     },
-    audioPrompt: "તમે તમારો રિઝ્યૂમે કેવી રીતે બનાવવા માંગો છો તે પસંદ કરો - ગાઇડેડ મોડ અથવા ફ્રી ફોર્મ મોડ",
+    audioPrompt: "તમે ���મારો રિઝ્યૂમે કેવી રીતે બનાવવા માંગો છો તે પસંદ કરો - ગાઇડેડ મોડ અથવા ફ્રી ફોર્મ મોડ",
   },
   kn: {
     title: "ನಿಮ್ಮ ರೆಸ್ಯೂಮ್ ರಚನೆಯ ವಿಧಾನವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
@@ -125,11 +125,11 @@ const modeContent = {
     guided: {
       title: "ಗೈಡೆಡ್ ಮೋಡ್",
       description: "ನಾವು ನಿಮ್ಮನ್ನು ಒಂದೊಂದಾಗಿ ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳುತ್ತೇವೆ ಮತ್ತು ಹಂತಹಂತವಾಗಿ ನಿಮ್ಮ ರೆಸ್ಯೂಮ್ ನಿರ್ಮಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತೇವೆ",
-      features: ["ಹಂತಹಂತದ ಪ್ರಶ್ನೆಗಳು", "ರಚನಾತ್ಮಕ ವಿಧಾನ", "ಆರಂಭಿಕರಿಗೆ ಪರಿಪೂರ್ಣ"],
+      features: ["ಹಂತಹಂತದ ಪ್ರಶ್ನೆಗಳು", "ರಚನಾತ್ಮಕ ವಿಧಾನ", "ಆરಂಭಿಕರಿಗೆ ಪರಿೂರ್ಣ"],
     },
     freeform: {
       title: "ಫ್ರೀ ಫಾರ್ಮ್ ಮೋಡ್",
-      description: "ನಿಮ್ಮ ಅನುಭವದ ಬಗ್ಗೆ ಮುಕ್ತವಾಗಿ ಮಾತನಾಡಿ ಮತ್ತು ನಾವು ಅದನ್ನು ವೃತ್ತಿಪರ ರೆಸ್ಯೂಮ್ ಆಗಿ ಸಂಘಟಿಸುತ್ತೇವೆ",
+      description: "ನಿಮ್ಮ ಅನುಭವದ ಬಗ್ಗೆ ಮುಕ್ತವಾಗಿ ಮಾತನಾಡಿ ಮತ್ತು ನಾವು ಅದನ್ನು ವೃತ್ತಿರ ರೆಸ್ಯೂಮ್ ಆಗಿ ಸಂಘಟಿಸುತ್ತೇವೆ",
       features: ["ಸ್ವಾಭಾವಿಕವಾಗಿ ಮಾತನಾಡಿ", "ನಿಮ್ಮ ಕಥೆಯನ್ನು ಹೇಳಿ", "ಹೆಚ್ಚು ಹೊಂದಿಕೊಳ್ಳುವ ವಿಧಾನ"],
     },
     audioPrompt: "ನೀವು ನಿಮ್ಮ ರೆಸ್ಯೂಮ್ ಅನ್ನು ಹೇಗೆ ರಚಿಸಲು ಬಯಸುತ್ತೀರಿ ಎಂಬುದನ್ನು ಆಯ್ಕೆಮಾಡಿ - ಗೈಡೆಡ್ ಮೋಡ್ ಅಥವಾ ಫ್ರೀ ಫಾರ್ಮ್ ಮೋಡ್",
@@ -143,7 +143,7 @@ const modeContent = {
       features: ["ഘട്ടം ഘട്ടമായുള്ള ചോദ്യങ്ങൾ", "ഘടനാപരമായ സമീപനം", "തുടക്കക്കാർക്ക് അനുയോജ്യം"],
     },
     freeform: {
-      title: "ഫ്രീ ഫോം മോഡ്",
+      title: "ഫ്രീ ഫോം മോಡ്",
       description: "നിങ്ങളുടെ അനുഭവത്തെക്കുറിച്ച് സ്വതന്ത്രമായി സംസാരിക്കുക, ഞങ്ങൾ അത് ഒരു പ്രൊഫഷണൽ റെസ്യൂമെയായി ക്രമീകരിക്കും",
       features: ["സ്വാഭാവികമായി സംസാരിക്കുക", "നിങ്ങളുടെ കഥ പറയുക", "കൂടുതൽ വഴക്കമുള്ള സമീപനം"],
     },
@@ -258,6 +258,19 @@ export function ModeSelectionModal({ isOpen, onClose, onModeSelect, selectedLang
     }
   }
 
+  const handleModeSelect = (mode: "guided" | "freeform") => {
+    localStorage.setItem("selectedMode", mode)
+
+    if (mode === "freeform") {
+      // Navigate to free form recording page
+      window.location.href = "/free-form-recording"
+    } else {
+      // Navigate to guided mode (to be implemented)
+      onModeSelect(mode)
+    }
+    onClose()
+  }
+
   if (!isOpen) return null
 
   return (
@@ -288,7 +301,7 @@ export function ModeSelectionModal({ isOpen, onClose, onModeSelect, selectedLang
             {/* Guided Mode */}
             <div
               className="border-2 border-gray-200 rounded-xl p-6 hover:border-blue-300 transition-colors cursor-pointer group"
-              onClick={() => onModeSelect("guided")}
+              onClick={() => handleModeSelect("guided")}
             >
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
@@ -328,7 +341,7 @@ export function ModeSelectionModal({ isOpen, onClose, onModeSelect, selectedLang
             {/* Free Form Mode */}
             <div
               className="border-2 border-gray-200 rounded-xl p-6 hover:border-green-300 transition-colors cursor-pointer group"
-              onClick={() => onModeSelect("freeform")}
+              onClick={() => handleModeSelect("freeform")}
             >
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
@@ -356,7 +369,7 @@ export function ModeSelectionModal({ isOpen, onClose, onModeSelect, selectedLang
                 {selectedLanguage === "mr" && "फ्री फॉर्म मोड निवडा"}
                 {selectedLanguage === "gu" && "ફ્રી ફોર્મ મોડ પસંદ કરો"}
                 {selectedLanguage === "kn" && "ಫ್ರೀ ಫಾರ್ಮ್ ಮೋಡ್ ಆಯ್ಕೆಮಾಡಿ"}
-                {selectedLanguage === "ml" && "ഫ്രീ ഫോം മോഡ് തിരഞ്ഞെടുക്കുക"}
+                {selectedLanguage === "ml" && "ഫ്രീ ഫോം മോಡ് തിരഞ്ഞെടുക്കുക"}
                 {selectedLanguage === "pa" && "ਫ੍ਰੀ ਫਾਰਮ ਮੋਡ ਚੁਣੋ"}
                 {selectedLanguage === "or" && "ଫ୍ରୀ ଫର୍ମ ମୋଡ୍ ବାଛନ୍ତୁ"}
                 {selectedLanguage === "as" && "ফ্ৰী ফৰ্ম মোড বাছনি কৰক"}
