@@ -322,35 +322,169 @@ export function ProfessionSelection() {
     }
   }
 
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 relative overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fillRule='evenodd'%3E%3Cg fill='%23ffffff' fillOpacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}
-        ></div>
-      </div>
+//   return (
+//     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 relative overflow-hidden">
+//       {/* Background pattern */}
+//       <div className="absolute inset-0 opacity-10">
+//         <div
+//           className="absolute inset-0"
+//           style={{
+//             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fillRule='evenodd'%3E%3Cg fill='%23ffffff' fillOpacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+//           }}
+//         ></div>
+//       </div>
 
-      {/* Header */}
-      <header className="relative z-10 flex justify-between items-center p-6">
+//       {/* Header */}
+//       <header className="relative z-10 flex justify-between items-center p-6">
+//         <div className="flex items-center space-x-2">
+//           <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+//             <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+//               <path d="M7 4V2a1 1 0 011-1h4a1 1 0 011 1v2h4a1 1 0 110 2h-1v10a2 2 0 01-2 2H6a2 2 0 01-2-2V6H3a1 1 0 110-2h4zM9 4h2V3H9v1zm-4 2v9a1 1 0 001 1h8a1 1 0 001-1V6H5z" />
+//             </svg>
+//           </div>
+//           <h1 className="text-2xl font-bold text-white">Vocal Resume</h1>
+//         </div>
+
+//         <div className="flex items-center space-x-2">
+//           {/* Audio controls */}
+//           <Button
+//             variant="outline"
+//             size="sm"
+//             className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+//             onClick={replayAudio}
+//             disabled={isAudioPlaying}
+//           >
+//             <Volume2 className="w-4 h-4 mr-1" />
+//             {isAudioPlaying ? "Playing..." : "Replay"}
+//           </Button>
+
+//           <Button
+//             variant="outline"
+//             size="sm"
+//             className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+//             onClick={toggleAudio}
+//           >
+//             {audioEnabled ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
+//           </Button>
+
+//           <Button
+//             variant="outline"
+//             className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+//             onClick={() => router.back()}
+//           >
+//             Back
+//           </Button>
+//         </div>
+//       </header>
+
+//       {/* Main Content */}
+//       <main className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6">
+//         <div className="max-w-6xl mx-auto text-center">
+//           <div className="mb-8">
+//             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+//               {pageTitles[selectedLanguage as keyof typeof pageTitles] || pageTitles.en}
+//             </h2>
+//             <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+//               {selectedLanguage === "hi" && "अपना पेशा चुनें और अपना रिज्यूमे बनाना शुरू करें"}
+//               {selectedLanguage === "bn" && "আপনার পেশা বেছে নিন এবং আপনার রিজিউমে তৈরি করা শুরু করুন"}
+//               {selectedLanguage === "te" && "మీ వృత్తిని ఎంచుకోండి మరియు మీ రెజ్యూమ్ను రూపొందించడం ప్రారంభించండి"}
+//               {selectedLanguage === "ta" && "உங்கள் தொழிலைத் தேர்ந்தெடுத்து உங்கள் ரெஸ்யூம�� உருவாக்கத் தொடங்குங்கள்"}
+//               {selectedLanguage === "mr" && "तुमचा व्यवसाय निवडा आणि तुमचा रिझ्यूमे तयार करण्यास सुरुवात करा"}
+//               {selectedLanguage === "gu" && "તમારો વ્યવસાય પસંદ કરો અને તમારો રિઝ્યૂમે બનાવવાનું શરૂ કરો"}
+//               {selectedLanguage === "kn" && "ನಿಮ್ಮ ವೃತ್ತಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ ಮತ್ತು ನಿಮ್ಮ ರೆಸ್ಯೂಮ್ ಅನ್ನು ರಚಿಸಲು ಪ್ರಾರಂಭಿಸಿ"}
+//               {selectedLanguage === "ml" && "നിങ്ങളുടെ തൊഴിൽ തിരഞ്ഞെടുത്ത് നിങ്ങളുടെ റെസ്യൂമെ സൃഷ്ടിക്കാൻ ആരംഭിക്കുക"}
+//               {selectedLanguage === "pa" && "ਆਪਣਾ ਪੇਸ਼ਾ ਚੁਣੋ ਅਤੇ ਆਪਣਾ ਰਿਜ਼ਿਊਮੇ ਬਣਾਉਣਾ ਸ਼ੁਰੂ ਕਰੋ"}
+//               {selectedLanguage === "or" && "ଆପଣଙ୍କର ବୃତ୍ତି ବାଛନ୍ତୁ ଏବଂ ଆପଣଙ୍କର ରିଜ୍ୟୁମ୍ ତିଆରି କରିବା ଆରମ୍ଭ କରନ୍ତୁ"}
+//               {selectedLanguage === "as" && "আপোনাৰ পেছা বাছনি কৰক আৰু আপোনাৰ ৰিজিউমে সৃষ্টি কৰা আৰম্ভ কৰক"}
+//               {selectedLanguage === "ur" && "اپنا پیشہ منتخب کریں اور اپنا ریزیومے بنانا شروع کریں"}
+//               {(selectedLanguage === "en" || !selectedLanguage) &&
+//                 "Select your profession and start creating your resume"}
+//             </p>
+//           </div>
+
+//           {/* Profession Grid */}
+//           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+//             {professions.map((profession) => {
+//               const translation =
+//                 profession.translations[selectedLanguage as keyof typeof profession.translations] ||
+//                 profession.translations.en
+
+//               return (
+//                 <Button
+//                   key={profession.id}
+//                   variant="outline"
+//                   className={`
+//                     h-32 flex flex-col items-center justify-center space-y-2 p-4
+//                     bg-white/10 border-white/20 text-white hover:bg-white/20 
+//                     transition-all duration-300 hover:scale-105
+//                     ${selectedProfession === profession.id ? "bg-blue-600/50 border-blue-400" : ""}
+//                   `}
+//                   onClick={() => handleProfessionSelect(profession.id)}
+//                 >
+//                   <div className="text-4xl mb-2">{profession.icon}</div>
+//                   <span className="text-sm font-semibold text-center leading-tight">{translation.name}</span>
+//                   <div className="text-xs text-gray-300 text-center">
+//                     {translation.subcategories.slice(0, 2).join(", ")}
+//                   </div>
+//                 </Button>
+//               )
+//             })}
+//           </div>
+
+//           {/* Audio Status */}
+//           {isAudioPlaying && (
+//             <div className="mt-8 bg-blue-600/20 backdrop-blur-sm rounded-lg p-4 max-w-md mx-auto">
+//               <div className="flex items-center justify-center space-x-2">
+//                 <Volume2 className="w-5 h-5 text-blue-400 animate-pulse" />
+//                 <span className="text-white">
+//                   {selectedLanguage === "hi" && "ऑडियो चल रहा है..."}
+//                   {selectedLanguage === "bn" && "অডিও চলছে..."}
+//                   {selectedLanguage === "te" && "ఆడియో ప్లే అవుతోంది..."}
+//                   {selectedLanguage === "ta" && "ஆடியோ இயங்குகிறது..."}
+//                   {selectedLanguage === "mr" && "ऑડिओ चालू आहे..."}
+//                   {selectedLanguage === "gu" && "ઓડિયો ચાલી રહ્યો છે..."}
+//                   {selectedLanguage === "kn" && "ಆಡಿಯೋ ಪ್ಲೇ ಆಗುತ್ತಿದೆ..."}
+//                   {selectedLanguage === "ml" && "ഓഡിയോ പ്ലേ ചെയ്യുന്നു..."}
+//                   {selectedLanguage === "pa" && "ਆਡੀਓ ਚੱਲ ਰਿਹਾ ਹੈ..."}
+//                   {selectedLanguage === "or" && "ଅଡିଓ ଚାଲୁଛି..."}
+//                   {selectedLanguage === "as" && "অଡিঅ' চলি আছে..."}
+//                   {selectedLanguage === "ur" && "آڈیو چل رہا ہے..."}
+//                   {(selectedLanguage === "en" || !selectedLanguage) && "Audio playing..."}
+//                 </span>
+//               </div>
+//             </div>
+//           )}
+//         </div>
+//       </main>
+
+//       {/* Mode Selection Modal */}
+//       <ModeSelectionModal
+//         isOpen={showModeModal}
+//         onClose={() => setShowModeModal(false)}
+//         onModeSelect={handleModeSelect}
+//         selectedLanguage={selectedLanguage}
+//       />
+//     </div>
+//   )
+// }
+
+ return (
+    <div className="min-h-screen bg-white relative overflow-hidden">
+      <header className="relative z-10 flex justify-between items-center p-6 border-b border-gray-200">
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
             <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
               <path d="M7 4V2a1 1 0 011-1h4a1 1 0 011 1v2h4a1 1 0 110 2h-1v10a2 2 0 01-2 2H6a2 2 0 01-2-2V6H3a1 1 0 110-2h4zM9 4h2V3H9v1zm-4 2v9a1 1 0 001 1h8a1 1 0 001-1V6H5z" />
             </svg>
           </div>
-          <h1 className="text-2xl font-bold text-white">Vocal Resume</h1>
+          <h1 className="text-2xl font-bold text-gray-900">Vocal Resume</h1>
         </div>
 
         <div className="flex items-center space-x-2">
-          {/* Audio controls */}
           <Button
             variant="outline"
             size="sm"
-            className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+            className="bg-gray-100 border-gray-300 text-gray-700 hover:bg-gray-200"
             onClick={replayAudio}
             disabled={isAudioPlaying}
           >
@@ -361,7 +495,7 @@ export function ProfessionSelection() {
           <Button
             variant="outline"
             size="sm"
-            className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+            className="bg-gray-100 border-gray-300 text-gray-700 hover:bg-gray-200"
             onClick={toggleAudio}
           >
             {audioEnabled ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
@@ -369,7 +503,7 @@ export function ProfessionSelection() {
 
           <Button
             variant="outline"
-            className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+            className="bg-gray-100 border-gray-300 text-gray-700 hover:bg-gray-200"
             onClick={() => router.back()}
           >
             Back
@@ -377,24 +511,23 @@ export function ProfessionSelection() {
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               {pageTitles[selectedLanguage as keyof typeof pageTitles] || pageTitles.en}
             </h2>
-            <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               {selectedLanguage === "hi" && "अपना पेशा चुनें और अपना रिज्यूमे बनाना शुरू करें"}
               {selectedLanguage === "bn" && "আপনার পেশা বেছে নিন এবং আপনার রিজিউমে তৈরি করা শুরু করুন"}
               {selectedLanguage === "te" && "మీ వృత్తిని ఎంచుకోండి మరియు మీ రెజ్యూమ్ను రూపొందించడం ప్రారంభించండి"}
-              {selectedLanguage === "ta" && "உங்கள் தொழிலைத் தேர்ந்தெடுத்து உங்கள் ரெஸ்யூம�� உருவாக்கத் தொடங்குங்கள்"}
+              {selectedLanguage === "ta" && "உங்கள் தொழிலைத் தேர்ந்தெடுத்து உங்கள் ரெஸ்யூமே உருவாக்கத் தொடங்குங்கள்"}
               {selectedLanguage === "mr" && "तुमचा व्यवसाय निवडा आणि तुमचा रिझ्यूमे तयार करण्यास सुरुवात करा"}
               {selectedLanguage === "gu" && "તમારો વ્યવસાય પસંદ કરો અને તમારો રિઝ્યૂમે બનાવવાનું શરૂ કરો"}
               {selectedLanguage === "kn" && "ನಿಮ್ಮ ವೃತ್ತಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ ಮತ್ತು ನಿಮ್ಮ ರೆಸ್ಯೂಮ್ ಅನ್ನು ರಚಿಸಲು ಪ್ರಾರಂಭಿಸಿ"}
               {selectedLanguage === "ml" && "നിങ്ങളുടെ തൊഴിൽ തിരഞ്ഞെടുത്ത് നിങ്ങളുടെ റെസ്യൂമെ സൃഷ്ടിക്കാൻ ആരംഭിക്കുക"}
               {selectedLanguage === "pa" && "ਆਪਣਾ ਪੇਸ਼ਾ ਚੁਣੋ ਅਤੇ ਆਪਣਾ ਰਿਜ਼ਿਊਮੇ ਬਣਾਉਣਾ ਸ਼ੁਰੂ ਕਰੋ"}
-              {selectedLanguage === "or" && "ଆପଣଙ୍କର ବୃତ୍ତି ବାଛନ୍ତୁ ଏବଂ ଆପଣଙ୍କର ରିଜ୍ୟୁମ୍ ତିଆରି କରିବା ଆରମ୍ଭ କରନ୍ତୁ"}
+              {selectedLanguage === "or" && "ଆପଣଙ୍କର ବୃତ୍ତି ବାନ୍ତୁ ଏବଂ ଆପଣଙ୍କର ରିଜ୍ୟୁମ୍ ତିଆରି କରିବା ଆରମ୍ଭ କରନ୍ତୁ"}
               {selectedLanguage === "as" && "আপোনাৰ পেছা বাছনি কৰক আৰু আপোনাৰ ৰিজিউমে সৃষ্টি কৰা আৰম্ভ কৰক"}
               {selectedLanguage === "ur" && "اپنا پیشہ منتخب کریں اور اپنا ریزیومے بنانا شروع کریں"}
               {(selectedLanguage === "en" || !selectedLanguage) &&
@@ -402,8 +535,7 @@ export function ProfessionSelection() {
             </p>
           </div>
 
-          {/* Profession Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-3 gap-8 max-w-4xl mx-auto">
             {professions.map((profession) => {
               const translation =
                 profession.translations[selectedLanguage as keyof typeof profession.translations] ||
@@ -414,16 +546,16 @@ export function ProfessionSelection() {
                   key={profession.id}
                   variant="outline"
                   className={`
-                    h-32 flex flex-col items-center justify-center space-y-2 p-4
-                    bg-white/10 border-white/20 text-white hover:bg-white/20 
-                    transition-all duration-300 hover:scale-105
-                    ${selectedProfession === profession.id ? "bg-blue-600/50 border-blue-400" : ""}
+                    h-36 flex flex-col items-center justify-center space-y-2 p-4
+                    bg-white border-gray-300 text-gray-700 hover:bg-gray-50 
+                    transition-all duration-300 hover:scale-105 shadow-sm
+                    ${selectedProfession === profession.id ? "bg-blue-50 border-blue-400 text-blue-700" : ""}
                   `}
                   onClick={() => handleProfessionSelect(profession.id)}
                 >
                   <div className="text-4xl mb-2">{profession.icon}</div>
                   <span className="text-sm font-semibold text-center leading-tight">{translation.name}</span>
-                  <div className="text-xs text-gray-300 text-center">
+                  <div className="text-xs text-gray-500 text-center">
                     {translation.subcategories.slice(0, 2).join(", ")}
                   </div>
                 </Button>
@@ -431,23 +563,22 @@ export function ProfessionSelection() {
             })}
           </div>
 
-          {/* Audio Status */}
           {isAudioPlaying && (
-            <div className="mt-8 bg-blue-600/20 backdrop-blur-sm rounded-lg p-4 max-w-md mx-auto">
+            <div className="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-4 max-w-md mx-auto">
               <div className="flex items-center justify-center space-x-2">
-                <Volume2 className="w-5 h-5 text-blue-400 animate-pulse" />
-                <span className="text-white">
+                <Volume2 className="w-5 h-5 text-blue-600 animate-pulse" />
+                <span className="text-blue-700">
                   {selectedLanguage === "hi" && "ऑडियो चल रहा है..."}
                   {selectedLanguage === "bn" && "অডিও চলছে..."}
                   {selectedLanguage === "te" && "ఆడియో ప్లే అవుతోంది..."}
                   {selectedLanguage === "ta" && "ஆடியோ இயங்குகிறது..."}
-                  {selectedLanguage === "mr" && "ऑડिओ चालू आहे..."}
+                  {selectedLanguage === "mr" && "ऑडिओ चालू आहे..."}
                   {selectedLanguage === "gu" && "ઓડિયો ચાલી રહ્યો છે..."}
                   {selectedLanguage === "kn" && "ಆಡಿಯೋ ಪ್ಲೇ ಆಗುತ್ತಿದೆ..."}
                   {selectedLanguage === "ml" && "ഓഡിയോ പ്ലേ ചെയ്യുന്നു..."}
                   {selectedLanguage === "pa" && "ਆਡੀਓ ਚੱਲ ਰਿਹਾ ਹੈ..."}
                   {selectedLanguage === "or" && "ଅଡିଓ ଚାଲୁଛି..."}
-                  {selectedLanguage === "as" && "অଡিঅ' চলি আছে..."}
+                  {selectedLanguage === "as" && "অডিঅ' চলি আছে..."}
                   {selectedLanguage === "ur" && "آڈیو چل رہا ہے..."}
                   {(selectedLanguage === "en" || !selectedLanguage) && "Audio playing..."}
                 </span>
@@ -457,7 +588,6 @@ export function ProfessionSelection() {
         </div>
       </main>
 
-      {/* Mode Selection Modal */}
       <ModeSelectionModal
         isOpen={showModeModal}
         onClose={() => setShowModeModal(false)}
@@ -467,3 +597,4 @@ export function ProfessionSelection() {
     </div>
   )
 }
+
